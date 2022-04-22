@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 /*
     We solve in O(n) time by reading left to right, counting how many same characters 
-    we've seen in a row, and reembering the maximum such length.
+    we've seen in a row, and remembering the maximum such length.
 */
 
 public class Repetitions {
