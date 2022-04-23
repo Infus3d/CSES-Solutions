@@ -8,7 +8,7 @@ import java.util.Scanner;
  * 1 for the square it's on, and the rest for its moves. The number of squares it blocks via moves is reduced
  * if it is near an edge, based on number of squares that fall outside the board. if within 2 of top edge, top two squares are 
  * outside the board.
- * For n < 6, we will simply solve by brute force
+ * For n < 20, we will simply solve by brute force
  * Otherwise, the following holds:
  * There are 4 squares where placing the knight blocks just 3 squares for the second knight (corners)
  * 8 squares where 4 squares are blocked (adjacent to corners)
