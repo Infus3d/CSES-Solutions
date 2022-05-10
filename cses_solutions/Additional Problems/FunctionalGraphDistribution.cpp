@@ -10,7 +10,7 @@
  * The solution to the problem stems from noticing that there is exactly 1 outgoing edge from every node.
  * This implies that there are n edges in total no matter how you partition the nodes. Note that this
  * is just 1 edge more than what's needed to form a tree out of n nodes, meaning there is exactly 1
- * cycle in every connected component of size n.
+ * cycle in every connected component of any size.
  * 
  * The goal is to find the answer to the problem for every k (1<=k<=n) separately in O(n) time 
  * which leads to O(n^2) overall runtime. (k here stands for k components of the functional graph)
@@ -23,11 +23,11 @@
  *       of the k cycles and make sure that they don't form a cycle among themselves. According to Cayley's
  *       formula, the number of ways to make labelled forest on n nodes with k connected trees so that the nodes
  *       1, 2, 3, ... k belong to a different tree in the forest is: k * n^(n-k-1). We can use this formula
- *       in our solution: The number of ways to assign (n-j) non-cyclic nodes to k cycles with j nodes in total
+ *       in our solution: The number of ways to assign (n-j) non-cyclic nodes to k(irrelevant) cycles with j nodes in total
  *       is j * n^(n - j - 1)
  * 
  * ----> We multiply all of the above values to get the answer (number of ways to make a j-node functional
- *       graph with k cycles) for current j:
+ *       graph with k components) for current j:
  *       (n choose j) * (n 'stirling' j) * j * n^(n - j - 1)
  * 
  * We take the sum over all j for every k and print it as described in the output of the problem.
@@ -78,7 +78,7 @@ ll T(int n, int k){
   ll sum = 0;
   for(int j = 1; j <= n; j++){
     ll a = C[n][j];  //n choose j
-    ll b = S[j][k];  //# of ways to have k disjoint cycles with j nodes
+    ll b = S[j][k];  //# of ways to have k disjoint cycles on j nodes
     ll c = (j == n ? 1 : mul(pown[n-j-1], j)); // when j == n, j * n^(n-j-1) = j * n^(-1) = 1
     
     sum = add(sum, mul(a, mul(b, c)));
