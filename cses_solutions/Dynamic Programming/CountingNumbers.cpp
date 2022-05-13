@@ -1,4 +1,6 @@
 /*
+ * Problem link: https://cses.fi/problemset/task/2220
+ * 
  * The solution uses what's known as digit dp. It is a nice way of solving
  * similar problems where you need to be aware of the digits.
  * 
