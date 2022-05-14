@@ -77,9 +77,9 @@ int main(){
   for(auto &i : compressor) i.second = ++cnt;
   
   for(int i=1; i<=n; i++){
-    a[i] = compressor[a[i]];
-    b[i] = compressor[b[i]];
-    intervals[a[i]].push_back(i);
+    a[i] = compressor[a[i]]; //getting the compressed values
+    b[i] = compressor[b[i]]; //getting the compressed values
+    intervals[a[i]].push_back(i);  //marking the existence of the interval at a[i]'th index
   }
   
   for(int i=1; i<=cnt; i++){
