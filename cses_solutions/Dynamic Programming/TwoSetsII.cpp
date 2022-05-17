@@ -13,6 +13,7 @@
  * the inner loop iterates over the sums we have so far in our dp.
  * By going from maximum sum to minimum sum ensures that we use
  * each value once.
+ * Runtime O(n^3)
  * */
 #include "bits/stdc++.h"
 

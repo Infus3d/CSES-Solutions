@@ -2,6 +2,7 @@
  * Problem link : https://cses.fi/problemset/task/1633
  * Tutorial : https://codeforces.com/blog/entry/70018
  * (Please locate the problem in this blog ^)
+ * Runtime O(n) since 6 is constant
  * */
 #include "bits/stdc++.h"
 

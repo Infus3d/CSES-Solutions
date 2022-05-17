@@ -5,6 +5,7 @@
  * This is a well known application of dynamic programming
  * called 0-1 knapsack. Please refer to the blog above
  * to learn more.
+ * Runtime O(n*x)
  * */
 #include "bits/stdc++.h"
 

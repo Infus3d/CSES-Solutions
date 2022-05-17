@@ -39,6 +39,7 @@
  *         Disjoint row: dp[i][1] += dp[i-1][0]
  * 
  * The final answer is then simply: dp[n][0] + dp[n][1]
+ * Runtime O(n)
  * */
 #include "bits/stdc++.h"
 

@@ -27,6 +27,7 @@
  * done so far and the minimum number of weight in the current ride
  * over a particular bitmask (of people). So we construct our dp
  * array as a 'pair'.
+ * Runtime O(n * 2^n)
  * */
 #include "bits/stdc++.h"
 

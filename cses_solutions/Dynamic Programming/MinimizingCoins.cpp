@@ -7,6 +7,7 @@
  * the number of ways to achieve x.
  * This is well known knapsack problem which you can learn from
  * the blog link above.
+ * Runtime O(n*x)
  * */
 #include "bits/stdc++.h"
 

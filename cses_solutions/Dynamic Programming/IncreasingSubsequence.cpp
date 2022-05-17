@@ -7,6 +7,8 @@
  * CSES book : https://cses.fi/book/book.pdf
  * wikipedia : https://en.wikipedia.org/wiki/Longest_increasing_subsequence#:~:text=In%20computer%20science%2C%20the%20longest,not%20necessarily%20contiguous%2C%20or%20unique.
  * CF blog : https://codeforces.com/blog/entry/70018
+ * 
+ * Runtime O(n*log(n))
  * */
 
 #include "bits/stdc++.h"

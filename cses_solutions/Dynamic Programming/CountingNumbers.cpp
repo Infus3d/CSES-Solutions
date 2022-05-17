@@ -21,6 +21,7 @@
  * For digits that are greater than its respective digit, only proceed with that digit
  * when [equal so far] == 0 for current position, because we can't got above the 'upper_bound'
  * number.
+ * Runtime O(n*m) where n = digit count of b and m = base of the number (10)
  * */
 #include "bits/stdc++.h"
 

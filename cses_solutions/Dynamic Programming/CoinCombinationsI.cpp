@@ -5,6 +5,7 @@
  * Simplest form of 0-1 knapsack where we have infinite
  * number of coins of each type and the adding order
  * of the coins is not specified.
+ * Runtime O(n*x)
  * */
 #include "bits/stdc++.h"
 

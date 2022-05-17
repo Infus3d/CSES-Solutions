@@ -5,6 +5,7 @@
  * https://codeforces.com/blog/entry/70018
  * 
  * Scroll down to locate the problem.
+ * Runtime O(n^2)
  * */
 #include "bits/stdc++.h"
 

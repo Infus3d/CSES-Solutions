@@ -44,6 +44,7 @@
  *      we do dp[i] = max(dp[i], dp[i-1] on every iteration.
  * 
  * The final answer is then dp[max_possible_compressed_time]
+ * Runtime O(n*logn + n)
  * */
 #include "bits/stdc++.h"
 

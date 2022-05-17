@@ -2,6 +2,7 @@
  * Problem link : https://cses.fi/problemset/task/1745
  * Thorough explanation : https://codeforces.com/blog/entry/70018
  * (You might need to scroll down to locate the problem)
+ * Runtime O(n^2 * x)
  * */
 #include "bits/stdc++.h"
 

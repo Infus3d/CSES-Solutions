@@ -9,6 +9,7 @@
  * moves than current dp[i] by dp[i] = min(dp[i], dp[i-j]+1)
  * 
  * Answer is dp[n]
+ * Runtime O(n*m) where m = digit count of n
  * */
 #include "bits/stdc++.h"
 

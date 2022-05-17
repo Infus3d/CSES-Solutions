@@ -12,6 +12,7 @@
  * dp. Notice how the loop for(j<n) is the outer loop now. By doing so we guarantee
  * that the element j+1 is added only after all combinations of elements 0...j have
  * been counted.
+ * Runtime O(n*x)
  * */
 #include "bits/stdc++.h"
 

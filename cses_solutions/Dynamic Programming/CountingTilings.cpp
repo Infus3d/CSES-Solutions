@@ -8,6 +8,8 @@
  * with varying time complexities. To learn more about them
  * plese visit:
  * https://discuss.codechef.com/t/bitmask-dp-note-cses-counting-tilings/92175
+ *
+ * Runtime of this approach is O(n*m*2^n)
  * */
 #include "bits/stdc++.h"
 

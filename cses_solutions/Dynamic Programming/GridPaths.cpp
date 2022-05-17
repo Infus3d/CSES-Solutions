@@ -20,6 +20,7 @@
  * -----} if current cell is trapped, then dp[i][j] = 0
  * 
  * Final answer will then be dp[n-1][n-1]
+ * Runtime O(n^2)
  * */
 #include "bits/stdc++.h"
 
