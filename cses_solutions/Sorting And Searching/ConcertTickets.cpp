@@ -30,7 +30,8 @@
  * The binary searched number: 10 (index 5, 0-based)
  * The number/element that is one-index before : 5 (index 4, 0-based)
  * 
- * As you can see both methods yield the same result.
+ * As you can see both methods yield the same result. Whenever we find the desired
+ * element, we pop/delete it from the set because customer j purchases it.
  * 
  * Now this S needs to be a balanced binary search tree to guarantee we can do
  * all the operations mentioned above in O(log(n)) time. Luckily, c++ stl has
