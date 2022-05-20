@@ -54,8 +54,7 @@
  * (You can also look into Projects.cpp in 'Dynamic Programming' section/folder to learn more
  * about compression. Or just google 'value compression competitive programming')
  * 
- * Total runtime: O(n*log(n) + n) because of maps (insertion is logn) and the O(n) iteration through
- * the timeline.
+ * Total runtime: O(n*log(n)) because of map : insertion is logn
  * */
 #include "bits/stdc++.h"
 
