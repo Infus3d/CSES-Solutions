@@ -13,6 +13,8 @@ import java.util.StringTokenizer;
  * answer by one. Finally print answer+1 because we need to account
  * for the ver first number that wasn't compared with anything else
  * before it.
+ * 
+ * Runtime O(n*log(n))
  */
 public class DistinctNumbers {
     public static void main(String args[]){

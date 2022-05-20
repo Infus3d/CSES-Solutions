@@ -43,6 +43,8 @@
  * 
  * -----> S.upper_bound(a) finds the smallest element that is strictly greater
  *        than a in S. (We use this one in our solution)
+ * 
+ * Runtime (n*log(n))
  * */
 #include "bits/stdc++.h"
 

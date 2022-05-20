@@ -13,7 +13,7 @@
  *         is already greater than x, then weight[l+1]+weight[r] is guaranteed to be > x. But,
  *         weight[l] + weight[r-1] can still have a chance at <= x.
  * 
- * Runtime O(n*log(n) + n) because sorting + two-pointers
+ * Runtime O(n*log(n)) because sorting
  * */
 #include "bits/stdc++.h"
 

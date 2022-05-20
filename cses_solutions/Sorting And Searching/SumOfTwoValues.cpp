@@ -17,6 +17,8 @@
  * of the two numbers in the initial (unsorted) array. To do that we
  * could just 'attach' the initial indices to the array values (making
  * them pair) and sort them together.
+ * 
+ * Runtime O(n*log(n))
  * */
 #include "bits/stdc++.h"
 

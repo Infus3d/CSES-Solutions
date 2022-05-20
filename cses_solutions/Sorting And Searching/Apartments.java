@@ -17,6 +17,8 @@ import java.util.StringTokenizer;
  * is suboptimal).
  * Whenever we find a match, that is, (a[i]-k <= b[j] and b[j] <= a[i]+k) condition
  * is met, assign a[i] to b[j] and increase the answer.
+ * 
+ * Runtime O(n*log(n))
  */
 public class Apartments {
     public static void main(String args[]){
