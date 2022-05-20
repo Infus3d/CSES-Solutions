@@ -12,6 +12,8 @@
  *         The reason we don't put weight[l] in a separate cabin is that if weight[l]+weight[r]
  *         is already greater than x, then weight[l+1]+weight[r] is guaranteed to be > x. But,
  *         weight[l] + weight[r-1] can still have a chance at <= x.
+ * 
+ * Runtime O(n*log(n) + n) because searching + two-pointers
  * */
 #include "bits/stdc++.h"
 
