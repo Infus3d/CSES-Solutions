@@ -1,7 +1,7 @@
 /*
  * Problem link : https://cses.fi/problemset/task/1074
  * 
- * We can sort all elements in give array p and for each
+ * We can sort all elements in given array p and for each
  * p[i] find out cost of making sticks that are smaller than
  * p[i] (to the left of i) and sticks that are larger than p[i]
  * (to the right of i) equal to p[i].
