@@ -1,9 +1,9 @@
 /*
  * Problem link : https://cses.fi/problemset/task/1640
  * 
- * This is a well known 'leetcode' problem where we need
+ * This is a famous 'leetcode' problem where we need
  * to find 2 numbers in the array that sum up to x.
- * We could easily sort the given array maintain 2 pointers
+ * We could easily sort the given array and maintain 2 pointers
  * l = 0 and r = n-1:
  * -----> if a[l] + a[r] > x then we definitely need to go lower
  *        so we do r--.
