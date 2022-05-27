@@ -14,7 +14,7 @@
  * 
  * To get the answer, it is enough to maximize the current answer with
  * r-i everytime we're done increasing r.
- * Runtime O(n * logn) where logn is the cost of inserting into 'map'
+ * Runtime O(n * log(n)) where log(n) is the cost of inserting into 'map'
  * */
 #include "bits/stdc++.h"
 
