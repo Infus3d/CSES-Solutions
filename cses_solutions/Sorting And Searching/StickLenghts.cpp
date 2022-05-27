@@ -1,12 +1,12 @@
 /*
  * Problem link : https://cses.fi/problemset/task/1074
  * 
- * We can sort all elements in give array p and for each
+ * We can sort all elements in given array p and for each
  * p[i] find out cost of making sticks that are smaller than
  * p[i] (to the left of i) and sticks that are larger than p[i]
  * (to the right of i) equal to p[i].
  * Let's first find the cost making sticks p[j] (j <= i) equal to p[i]
- * (the right side follows analogously) and store it in a[i] :
+ * and store it in a[i] :
  * ----> Assume that all p[j] (j <= i-1) are already equal to p[i-1] and
  *       the cost of doing so is stored in a[i-1]. Then to 'raise' all
  *       i-1 number of sticks from p[i-1] to p[i] it will cost
