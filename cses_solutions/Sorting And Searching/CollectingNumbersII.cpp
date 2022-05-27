@@ -35,7 +35,7 @@
  * We do the above for every single of those 4 pairs mentioned earlier.
  * However there is one last thing to keep in mind, and that is the case x[a] == x[b]-1 as we do not
  * want to double count the change that happens to this pair { (x[a], x[a]+1) and (x[b]-1, x[b]) are the
- * same in this context). To handle this, we just include a single if statement and calculate either of the
+ * same in this context }. To handle this, we just include a single if statement and calculate either of the
  * latter pairs.
  * 
  * Runtime O(n+m)
