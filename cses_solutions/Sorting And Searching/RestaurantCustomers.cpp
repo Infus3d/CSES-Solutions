@@ -40,7 +40,8 @@
  * timeline[]:  0  0  0  1  1  1  1  1  1  1   0 ...
  * 
  * Adding all these intervals is the same as doing timeline[a[i]]++, timeline[b[i]+1]--
- * first and adding them all together because addition is commutative and associative.
+ * first and accumulating the sums all together from left to right because addition 
+ * is commutative and associative.
  * 
  * The answer will then be the maximum the maximum timeline[i] over all i.
  * 
