@@ -43,11 +43,11 @@
  * first and accumulating the sums all together from left to right because addition 
  * is commutative and associative.
  * 
- * The answer will then be the maximum the maximum timeline[i] over all i.
+ * The answer will then be the maximum timeline[i] over all i.
  * 
  * Now since the numbers a[i] and b[i] are <= 1e9 in the problem (unlike what we assumed)
- * we need to compressing on them. Since in this problem only the order of the intervals
- * matter, we can replace the big numbers with smaller numbers while still maintaining the
+ * we need to do 'compressing' on them. Since in this problem only the order of the intervals
+ * matters, we can replace the big numbers with smaller numbers while still maintaining the
  * order. We can do it by gathering all a[i]'s and b[i]'s and chosing only the distinct numbers
  * among them and assigning those numbers a new value in the increasing order(sorted order). 
  * Please look at the code below where an std map is used as the compressor. Map automatically
@@ -55,7 +55,7 @@
  * (You can also look into Projects.cpp in 'Dynamic Programming' section/folder to learn more
  * about compression. Or just google 'value compression competitive programming')
  * 
- * Total runtime: O(n*log(n)) because of map : insertion is logn
+ * Total runtime: O(n*log(n)) because of map -> insertion is logn
  * */
 #include "bits/stdc++.h"
 
