@@ -37,13 +37,13 @@
  * Runtime O(n*log(n))
  * */
 #include "bits/stdc++.h"
-#include "ext/pb_ds/assoc_container.hpp"
+#include "ext/pb_ds/assoc_container.hpp" //need to build our indexed_set
 
 using namespace std;
-using namespace __gnu_pbds;
+using namespace __gnu_pbds; //also required
 
 typedef tree<int, null_type, less<int>, rb_tree_tag,
-          tree_order_statistics_node_update> indexed_set;
+          tree_order_statistics_node_update> indexed_set; //defining our own type
 
 int main(){
   int n, k;
