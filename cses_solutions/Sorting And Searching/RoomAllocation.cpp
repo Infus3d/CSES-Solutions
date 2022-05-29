@@ -7,8 +7,10 @@
  * all customers using those ans rooms at any given time.
  * 
  * To calculate ans, we first sort the intervals according to their left ends (and
- * then right ends, if l[i] == l[j]).  
- * Let's also store all 'open' intervals j (j < i) in a set S along with their assigned
+ * then right ends, if l[i] == l[j]). We call an interval j 'open' at position i if
+ * it's left end is smaller-than-or-equal-to the left end of interval i (l[j] < l[i])
+ * but its right end is bigger-than-or-equal-to it (l[i] <= r[j]).
+ * Let's now store all 'open' intervals j (j < i) in a set S along with their assigned
  * room number. Then on iteration i from smallest to largest:
  * -----> We close (or pop) the intervals j with their r[j] < l[i] from S because they
  *        are clearly not overlapping with any intervals from now on. By doing this, we
