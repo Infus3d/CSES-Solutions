@@ -14,7 +14,7 @@
  * and order check for an element, we resort to pbds indexed_set.
  * 
  * With indexed_set we can get the [ordered] index of the element we're
- * binary searching. Let's the index of such element u is idx (0 based), then
+ * binary searching. Let's call the index of such element u is idx (0 based), then
  * the set contains idx elements smaller than u and (set.size() - idx) elements
  * greater than or equal to u. These values help us count the number of intervals
  * for every j of M[i] on our iteration through the map (either i++ or i--).
