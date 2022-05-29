@@ -12,7 +12,7 @@
  * bigger than k so far is u. Then we have 2 options:
  * -----> Place k on top of u, effectively turning tower-u into tower-k.
  *        When an element v (u < v and v < k) arrives later in the array,
- *        then we will need to either place it onto its own smallest tower
+ *        we will need to either place it onto the smallest tower at that time
  *        bigger than v or start a new tower with v if there is no such bigger
  *        element. In either case, there will be 2 towers: tower-k and tower-v.
  * 
