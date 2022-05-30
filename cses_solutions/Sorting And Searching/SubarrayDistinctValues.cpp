@@ -5,7 +5,7 @@
  * We start with l = r = 0 and keep track of curDistinct - the number of 
  * distinct values in our range [l, r]. When increasing r will cause curDistinct
  * go above k, we stop. This r will then be the number of right-ends for our
- * current l, so we simply do ans += r. Whenever we can't increase r, we resort
+ * current l, so we simply do ans += r-l+1. Whenever we can't increase r, we resort
  * to increasing l and popping numbers from out range [l, r] and updating curDistinct
  * accordingly.
  * 
