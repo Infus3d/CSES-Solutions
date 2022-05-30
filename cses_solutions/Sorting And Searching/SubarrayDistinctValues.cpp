@@ -6,14 +6,14 @@
  * distinct values in our range [l, r]. When increasing r will cause curDistinct
  * go above k, we stop. This r will then be the number of right-ends for our
  * current l, so we simply do ans += r-l+1. Whenever we can't increase r, we resort
- * to increasing l and popping numbers from out range [l, r] and updating curDistinct
+ * to increasing l and popping numbers out from range [l, r] and updating curDistinct
  * accordingly.
  * 
  * To make it more clear, at any time we will have 2 choices to make with [l, r]:
  * ------> Increase r until our range [l, r] contains more than k distinct numbers:
  *         while(curDistinct <= k). Whenever we increase r, we need to update curDistinct.
  *         We can do it by keeping count of the numbers in our range [l, r]. If count[a[r]]
- *         is zero, then we increase curDistinct. If not, we don't do anything wth curDistinct.
+ *         is zero, then we increase curDistinct. If not, we don't do anything with curDistinct.
  *         In either case, we increase the count of a[r] : count[a[r]]++;
  * 
  * ------> Increase l when we can't increase r anymore. This helps us by popping the elements
@@ -27,7 +27,7 @@
  * For answer, we can see that every interval [l, i] with l <= i <= r will be a valid interval (that contains
  * at most k distinct elements) so we simply do ans += r-l+1; (+1 depends on how you handle r, i.e. inclusive or not).
  * 
- * Runtime O(n*log(n)) because numbers are too large to count them with arrays, so we use maps with logarithmic time.
+ * Runtime O(n*log(n)) because numbers are too large to count with arrays, so we use maps with logarithmic time.
  * */
 
 #include "bits/stdc++.h"
