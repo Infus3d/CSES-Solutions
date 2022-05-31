@@ -13,6 +13,8 @@
  *        onto 'ans': ans += x[i]. This means that if we are able to make
  *        all sums up to 'ans' (not including) then we can also add x[i] to
  *        those sums to make every integer in the range [ans, ans+x[i]-1].
+ * 
+ * Runtime O(n*log(n)) 
  * */
 #include "bits/stdc++.h"
 
