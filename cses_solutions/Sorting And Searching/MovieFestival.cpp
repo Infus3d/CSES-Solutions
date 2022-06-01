@@ -26,7 +26,7 @@ int main(){
   int curR = 0, ans = 0;
   for(int i=0; i<n; i++){
     int a = movie[i].second, b = movie[i].first;
-    if(a >= curR)
+    if(curR <= a)
       curR = b, ans++;
   }
   printf("%d\n", ans);
