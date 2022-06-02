@@ -5,9 +5,9 @@
  * states, or cells in this specific problem.
  * For every cell in the grid, we check if we can start traversing around from that
  * cell that is, if it is not visited and it's not '#'. If yes, we increase the answer
- * as just found a new 'room' to traverse and initiate a dfs
+ * as we just found a new 'room' to traverse and initiate a dfs
  * from that position and reach every cell we can while also marking the cells 'visited'
- * to guarantee linear time.
+ * to guarantee a linear time.
  * 
  * Runtime O(n*m) as we visit each cell at most once and don't come to the visited cell ever again.
  * */
