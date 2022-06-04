@@ -12,7 +12,7 @@
  * -----> We then look through all neighbors [i] of curNode and see if their
  *        cost[i] is bigger than cost[curNode] + 1. If it is, then update the
  *        cost and push the node into the queue. Also update the from[i] = curNode
- *        which helps us trace the path back fron n to 1 for output.
+ *        which helps us trace the path back from n to 1 for output.
  * 
  * Runtime O(n + m)
  * */
