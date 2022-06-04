@@ -10,7 +10,7 @@
  * current movies in a multiset (because of duplicates).
  * 
  * At every iteration i through the sorted movie list, we search for a member who is
- * available to take watch this movie. That means we just need to find any member with
+ * available to watch this movie. This means that we just need to find any member with
  * its last watched movie ending time <= a[i]. We can do this by simply binary searching
  * the smallest element strictly greater than a[i] (upper_bound) in our set. If this element
  * happens to be the smallest element in the entire set, then we don't have any member j

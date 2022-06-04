@@ -6,7 +6,7 @@
  * every other unvisited number and print it out.
  * We can do this because on every full rotation around the circle
  * we visit/print half of it. As there are only n numbers initially,
- * there will be at most [exactly actually] log(n) rotation through
+ * there will be at most [actually exactly] log(n) rotations through
  * the circle.
  * 
  * Runtime O(n*log(n))
