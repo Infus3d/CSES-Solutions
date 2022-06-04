@@ -40,8 +40,8 @@ int main(){
   for(int i=0; i<m; i++){
     int a, b;
     scanf("%d%d", &a, &b);
-    E[a].push_back(b);
-    E[b].push_back(a);
+    E[a].push_back(b); //storing the graph in adjacency list
+    E[b].push_back(a); 
   }
   
   vector<int> ansNodes;
