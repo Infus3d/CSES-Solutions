@@ -20,7 +20,7 @@
  * the cells, we would need to use Dijkstra's. It is worth some time trying to see/understand
  * why this is the case.
  * 
- * I tried to employ the best implementation tactics/strategies for this type of 'maze' problems
+ * I tried to employ the best implementation methods for this type of 'maze' problems
  * below so please take your time to fully understand it as it will be useful in many more problems
  * to come.
  * 
