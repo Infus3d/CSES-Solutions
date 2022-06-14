@@ -1,6 +1,9 @@
 /*
  * Problem link : https://cses.fi/problemset/task/1192
  * 
+ * Prereq:
+ * DFS : https://cses.fi/book/book.pdf (page 117)
+ * 
  * This is a very basic dfs (or bfs) problem where we need to maintain the visited
  * states, or cells in this specific problem.
  * For every cell in the grid, we check if we can start traversing around from that
