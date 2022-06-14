@@ -1,6 +1,9 @@
 /*
  * Problem link : https://cses.fi/problemset/task/1193
  * 
+ * Prereq:
+ * BFS : https://cses.fi/book/book.pdf (page 119)
+ * 
  * This problem is easy to solve but heavy to implement. We are guaranteed
  * that there is exactly 1 starting and 1 ending point in the labyrinth so
  * we just need to initiate the shortest path from A to any other cell it
