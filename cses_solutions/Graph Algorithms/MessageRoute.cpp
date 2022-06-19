@@ -1,6 +1,9 @@
 /*
  * Problem link : https://cses.fi/problemset/task/1667
  * 
+ * Prereq:
+ * BFS : https://cses.fi/book/book.pdf (page 119)
+ * 
  * The same logic as Labyrinth problem where we need to use BFS to find
  * the shortest path from A to B but this time it is on a graph instead
  * of a grid.

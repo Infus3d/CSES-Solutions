@@ -1,6 +1,9 @@
 /*
  * Problem link : https://cses.fi/problemset/task/1193
  * 
+ * Prereq:
+ * BFS : https://cses.fi/book/book.pdf (page 119)
+ * 
  * This problem is easy to solve but heavy to implement. We are guaranteed
  * that there is exactly 1 starting and 1 ending point in the labyrinth so
  * we just need to initiate the shortest path from A to any other cell it
@@ -17,7 +20,7 @@
  * the cells, we would need to use Dijkstra's. It is worth some time trying to see/understand
  * why this is the case.
  * 
- * I tried to employ the best implementation tactics/strategies for this type of 'maze' problems
+ * I tried to employ the best implementation methods for this type of 'maze' problems
  * below so please take your time to fully understand it as it will be useful in many more problems
  * to come.
  * 

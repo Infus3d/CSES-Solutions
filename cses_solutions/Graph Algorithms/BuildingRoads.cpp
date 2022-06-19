@@ -1,6 +1,9 @@
 /*
  * Problem link : https://cses.fi/problemset/task/1666
  * 
+ * Prereq:
+ * DFS : https://cses.fi/book/book.pdf (page 117)
+ * 
  * The idea here is the equivalent of the solution to 'Counting Rooms'
  * problem: we need to count the number of rooms, or in this problem, components. 
  * We essentially have a graph with multiple connected-components in it
