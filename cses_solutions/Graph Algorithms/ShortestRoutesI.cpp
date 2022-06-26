@@ -7,7 +7,7 @@
  * You can learn about Dijkstra by referring to the wonderful book:
  * https://cses.fi/book/book.pdf  Page(126)
  * 
- * Runtime O(n + m*logn(m))
+ * Runtime O(n + m*log(m))
  * */
 #include "bits/stdc++.h"
 
