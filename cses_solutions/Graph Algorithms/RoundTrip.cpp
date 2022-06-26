@@ -6,10 +6,10 @@
  * it asked to find a particular cycle but since we can print out any of such
  * cycles it is pretty straightforward.
  * 
- * We use dfs to traverse the graph and visit every single node on the way.
+ * We use DFS to traverse the graph and visit every single node on the way.
  * Once we find (come back) to a node that has already been visited, then we
  * have found a cycle. To know if such cycle is of length at least 3, we can
- * keep track of the previous (or parent) node in the dfs. If the 'new-found-
+ * keep track of the previous (or parent) node in the DFS. If the 'new-found-
  * -already-visited' node is the same as previous node, then the cycle is of
  * length 2 (just 2 nodes with 2 edges between them). And if it is not the same
  * as previous node, then cycle is at least of length 3. We also maintain a from[]
