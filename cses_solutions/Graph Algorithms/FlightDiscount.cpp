@@ -8,7 +8,7 @@
  * This would take total of O(m * (n + m*log(m))) which is too slow for m <= 2e5
  * constraint.
  * 
- * To make it faster, we would need to incorporate an easy dp into Dijkstra. Instead
+ * To make it faster, we can incorporate an easy dp into Dijkstra. Instead
  * of keeping just 1 array for the cost of the shortest path we would now need 2: cost[N][2]
  * where cost[u][0] is the cost of the shortest path from 1 to u with all edge weights kept
  * untouched (natural Dijkstra's cost) but cost[u][1] is the cost of the shortest path from
