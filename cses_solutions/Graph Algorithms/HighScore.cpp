@@ -25,10 +25,10 @@
  * 
  * Now the problem asks us to find out if it is possible to arrive at positive cycle from 1 while also
  * reach n from the same cycle. Since we've already found if a node is part of a positive cycle for all
- * nodes, all we need to do if that node is reachable from 1 and if that node can reach n. This is can
- * be done by simply running another DFS or BFS and just mainting 2 dimensional array reachable[i][j]
+ * nodes, all we need to do is to see if that node is reachable from 1 and if that node can reach n. This can
+ * be done by simply running another DFS or BFS and just mainting 2 dimensional array reachable[i][j] that
  * has a value of 1 if j is reachable by i. Note that while calculating this reachable table, we do not
- * need to worry about the cost of the edges as we're only testing for reachability.
+ * need to worry about the cost of the edges as we're only testing for 'reachability'.
  * Once we have our table reachable[][] and remCost[] we can simply go through all nodes i and check
  * the condition for 'infinite maximization of the score': remCost[i] > 0 and reachable[1][i] and reachable[i][n]
  * 
