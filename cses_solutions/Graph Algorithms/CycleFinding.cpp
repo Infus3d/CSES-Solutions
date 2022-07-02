@@ -14,8 +14,8 @@
  * 
  * To print the path, we keep track of u when updating v, i.e from[v] = u. Then, we also
  * remember the last node that was updated on the n'th iteration - x. Since it is clear that
- * there is a path from negative cycle to x, we can trace back from x until we hit the negative 
- * cycle. Since there isn't any reliable way to detect whether we're in the negative cycle or not,
+ * there is a path from negative cycle to x, we can trace back from x until we hit that negative 
+ * cycle. But there isn't any reliable way to detect whether we're in the negative cycle or not, so
  * we do the aformentioned backtracking 'n' times just to ensure that we do fall into the cycle
  * eventually. Then, we are free to print out the cycle using from[] array.
  * 
