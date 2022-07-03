@@ -11,18 +11,18 @@
  * 
  * This is very convenient because now we can simply interate over the array from beginning to end
  * and just process the dp to find the longest path to every node u and store it in dp[u]. dp[u] here
- * contains the number of nodes in such longest path.
+ * contains the number of nodes in such longest path from node 1 to node u.
  * 
- * We initiate dp[u] values of all nodes u to -1 so that it tells whether node u has been visited
+ * We initiate dp[u] values of all nodes u to -1 so that we know whether node u has been visited
  * or not. We initiate the starting node value to 1 (node 1).
  * Let a[i] = u on the i'th iteration:
  * -----> We first check if dp[u] == -1, because if it is, then there is no path from node 1 to node u.
- *        But if is anything other than -1, then we look through all neighbors v of u and update their 
+ *        But if it is anything other than -1, then we look through all neighbors v of u and update their 
  *        cost dp[v] = max(dp[v], dp[u] + 1).
  * ----------> If dp[v] is smaller than dp[u] + 1, then we've found a longer route to v and we need
  *             to mark u as the predecessor of v on its longest route (from[v] = u) so that we can
  *             trace it back later.
- * ----------> If not, then path from u to v is smaller than some other path that lead to v. So we
+ * ----------> If not, then path from u to v is smaller than some other path that leads to v. So we
  *             do nothing.
  * 
  * At the end, if dp[n] == -1, then the answer is IMPOSSIBLE. If it isn't, then there is at least some
