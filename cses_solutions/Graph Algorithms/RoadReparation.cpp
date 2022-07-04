@@ -48,6 +48,12 @@ int main(){
     }
   }
   
+  for(int i=1; i<n; i++)
+    if(findParent(i) != findParent(i+1)){
+      puts("IMPOSSIBLE");
+      return 0;
+    }
+  
   printf("%lld\n", ans);
   
   return 0;
