@@ -22,19 +22,19 @@
  * topological sort can not tell the 'locations' of the cycle but only whether it exists or not. It
  * turns out that it actually can locate the cycle within some special graphs and functional graph
  * is one of them. So we do a topological sort on the graph and get all the nodes that are not in the
- * cycle sorted. The nodes that make up a cycle will be left with inDegrees of exactly 1 and will not
- * be in the resulting sorted[] array.
+ * cycle sorted topologically. The nodes that make up a cycle will be left with inDegrees of exactly 1 
+ * and will not be in the resulting sorted[] array.
  * Since we now know that inDeg[u] = 1 means that node u is in a cycle, we can start from node u and
  * traverse this cycle (stop when we are again at u) to find the size - cycleSize. At this point, we
- * know that the maximum number of edges used for the nodes in this cycle is cycleSize, so we just
+ * know that the answer to the problem for the nodes in this cycle is cycleSize, so we just
  * assign dist[v] = cycleSize for every node v in this cycle.
  * 
  * Later, we can use our sorted[] array to find the distances of the nodes outside the cycle. We start
- * from the end and iterate towards the beginning of the array. Let's say that we are iteration i, and
+ * from the end and iterate towards the beginning of the array. Let's say that we are at iteration i, and
  * let's mark the current node as u = sorted[i]. We get the node v that node u is pointing to by v = t[u].
  * Afterwards, all we need to do is take the dist[v] and assign dist[u] = dist[v] + 1.
  * 
- * We can print out dist[] array as answer to the problem.
+ * We can print out dist[] array as the answer to the problem.
  * 
  * Runtime O(n + m)
  * */
