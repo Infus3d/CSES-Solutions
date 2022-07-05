@@ -22,15 +22,15 @@
  * fixing the median to its new position (newMedian) : curWindowCost += |median - newMedian|.
  * Please take some time to understand why this works.
  * 
- * Case 2 --> k is even: This case involves 2 medians at all times in our window. But fear not,
- * as it is not so difficult to handle. So when k is even, it turns out that after inserting
+ * Case 2 --> k is even: This case involves 2 medians at all times in our window but it is not 
+ * so difficult to handle. So when k is even, it turns out that after inserting
  * and popping the elements (curWindowCost = -|x[i-k] - median| + |x[i] - median|) we only
  * need to worry about about the position of the old median relative to the newMedian. We always
  * consider the smaller one of the 2 medians as our 'median', that is the element indexed (k-1)/2
  * in our ordered_set.
  * ------> If newMedian <= median, that is if old median is to the 'right' of the new median, we don't
  *         need to update curWindowCost since the cost of adjusting the elements [to the newMedian] on 
- *         the right of the old median equals the cost of the left-side elements of old median, they
+ *         the right of the old median equals the cost of the left-side elements of old median, and they
  *         cancel each other out.
  * 
  * ------> If median < newMedian, that is if old median is to the left of the new median the cost of
