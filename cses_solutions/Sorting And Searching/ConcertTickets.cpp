@@ -18,7 +18,7 @@
  * customer[j] : 6
  * The binary searched number : 'the-last-copy' of 5 (index 4, 0-based)
  * 
- * But unfortunately standard stl's do not support such binary-search method so
+ * But unfortunately standard library does not support such binary-search method so
  * we need to find the answer in a bit different way(in a way that is supported :).
  * The previously mentioned binary search is equivalent to binary searching the 
  * smallest element that is strictly greater than customer[j] in S and taking the 
