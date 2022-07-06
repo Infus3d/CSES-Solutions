@@ -14,7 +14,7 @@
  * -----> we run the above 2 until there are no nodes left in the sub-graph
  * 
  * We do the above for every single connected sub-graph of the given graph and then check for
- * its validity. Since we have all of the assigned teams of each person, this is each to check:
+ * its validity. Since we have a team assigned to each person, this is easy to check:
  * -----> For every i (1 <= i <= n) we just check if its friends have the same team number assigned
  *        to them. If yes, then answer is IMPOSSIBLE because there is no way we can 'handle' the
  *        connected sub-graph the node i is in. If no, then continue on.
