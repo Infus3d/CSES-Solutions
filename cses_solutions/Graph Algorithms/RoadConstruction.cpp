@@ -22,9 +22,9 @@
  * disjoint sets. So we start off with n sets/components initially, and when we union two sets
  * we can just decrease the number by 1.
  * 
- * Runtime O(n+m*log(n)) is the best approximation of the time complexity of Disjoint Set DS.
+ * Runtime of O(n+m*log(n)) is the best approximation for Disjoint Set Data Structure.
  * The best asymptotic that can be achieved when all optimizations like path compression, halving,
- * union by size, etc. employed is O(n + m*alpha(n)) where alpha represents the inverse Ackermann function.
+ * union by size, etc. are employed is O(n + m*alpha(n)) where alpha represents the inverse Ackermann function.
  * More about time complexity:
  * https://codeforces.com/blog/entry/98275
  * */
