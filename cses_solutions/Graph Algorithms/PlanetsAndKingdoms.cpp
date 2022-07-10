@@ -61,7 +61,7 @@ int main(){
   
   printf("%d\n", cnt);
   for(int i=1; i<=n; i++)
-    printf("%d%c", comp[i], " \n"[i == n]);
+    printf("%d%c", comp[i], " \n"[i == n]);//this will print '\n' if i == n and ' ' if not.
   
   return 0;
 }
