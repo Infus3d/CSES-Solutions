@@ -1,5 +1,5 @@
 /*
- * Problem link : https://cses.fi/problemset/task/1695
+ * Problem link : https://cses.fi/problemset/task/1696/
  * 
  * The bipartite matching problem can be solved with max-flow algorithm.
  * In this problem, we have a bipartite graph with boys as the first set of nodes

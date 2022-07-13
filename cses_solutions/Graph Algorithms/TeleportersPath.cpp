@@ -1,40 +1,30 @@
 /*
- * Problem link : https://cses.fi/problemset/task/1691
+ * Problem link : https://cses.fi/problemset/task/1693
  * 
- * The problem asks us to find a Eulerian Circuit in the given undirected graph.
- * Eulerian circuit of a graph is a path that starts from some node, visits
- * all edges in the graph exactly once, and ends at the initial node.
- * Eulerian circuit in an undirected graph can exist only when all of the edges
- * belong to the same connected component and when there is no odd-degree node.
- * That is, degree of every single node in the connected component must be even.
+ * The problem asks us to find the Eulerian Path of the given directed graph that
+ * starts from node 1 and ends at node n. Finding Eulerian path is easy once you
+ * know how to find Eulerian Circuits. I recommend solving Mail Delivery problem
+ * first because you will learn an approach to find such circuits.
  * 
- * Detecting the existence is not that difficult but finding such circuit involves
- * a little thinking. First, let's note that 2 completely disjoint circuits that share
- * the same node make up a single bigger circuit together. Disjoint here means that
- * the two circuits do not share an edge (but they may share a node!).
+ * Eulerian Path exists in the given graph only in 2 cases:
+ * -----> when indegree of each node also equals its outdegree 
  * 
- * That being said, to find the circuit for the graph we start from the postoffice -
- * - node 1 and run a DFS. On each call of the DFS we go through the edges the node u
- * has and go into the ones that haven't been visited before. Now the DFS might run for a while
- * before it finally comes to a 'trench' where the node u has no other edge unvisited.
+ * -----> There is exactly one node with outdegree 1 more than its indegree (start), and
+ *        exactly one node with indegree 1 more than its outdegree (end) and all other
+ *        nodes have their indegrees and outdegrees equal.
  * 
- * At that time we know that node u must equal our starting node because it was the only
- * node with odd-number of unvisited edges [remember that we started from this node,
- * and marked one of its edges 'visited']. This tells us that we have found a circuit although
- * it may not necessarily cover all the edges in the graph. For that reason, we mark node u
- * as the 'beginning' of the circuit instead of the 'end' - in fact we mark any node with no
- * unvisited edges left as the next node in the circuit (in the code below, we just print it out).
+ * Since we have our ending node != starting node, the answer to this problem is IMPOSSIBLE
+ * if the graph is anything but the 2nd case above.
  * 
- * We backtrack from such nodes as we push them into the path/circuit until we find a node that
- * has at least 2 unvisited node [note that 2 here refers to the fact that any such node should
- * have an even number of edges left]. We then travel into this edge of the node until eventually
- * we come back to this same node, finding another smaller completely disjoint circuit in the graph.
- * Like mentioned before, we can concatenate our previously found circuit with this one and assume
- * we have a bigger single circuit.
+ * After we make sure the graph contains the Eulerian path, we add an extra edge from node n
+ * to node 1 to make both of these nodes' indegrees equal their outdegrees. Afterwards, we can
+ * go ahead use our approach for finding Eulerian circuits but we start from node n instead of 1.
+ * Because after we find the circuit, we can pretend we there never was an edge that we previously
+ * manually added - the edge from n to 1 - and omit the last node in the eulerian circuit to make
+ * it an eulerian path :)
  * 
  * For more information and better explanation:
  * https://cses.fi/book/book.pdf    (Section 19.1)
- * https://usaco.guide/CP2.pdf#page=129
  * 
  * Runtime O(n+m)
  * */
