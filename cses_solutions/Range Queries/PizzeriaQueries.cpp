@@ -4,7 +4,7 @@
  * ---> Segment trees:
  *      https://cses.fi/book/book.pdf   (Section 9.3, 9.4)
  *  
- * In problem statement, p_a+|a−b| is in fact:
+ * From the problem statement, p_a+|a−b| is in fact:
  * -----> p_a + (a - b) if a >= b
  * -----> p_a + (b - a) if a < b
  * 
