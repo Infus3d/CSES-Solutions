@@ -15,7 +15,7 @@
  * 
  * Now, combining all these lets us understand: a ^ b ^ a = b
  *
- * The properties above hints that we can take xor's of the range just like we did with sums!
+ * The properties above hint that we can take xor's of the range just like we did with sums!
  * That is, if we want xor of the range [a, b] we just need (xor[1, b] ^ xor[1, a-1]). Because:
  * 
  * xor[1, b]   : xor[1, 2, 3, ... , a-1, a, a+1, ..., b-1, b]
