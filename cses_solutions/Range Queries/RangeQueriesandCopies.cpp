@@ -1,9 +1,9 @@
 /*
  * Problem link : https://cses.fi/problemset/task/1737
  * 
- * This is a direct application of persistent segment tree. When asked for a query
+ * This is a direct application of the persistent segment tree. When asked for a query
  * of 3rd type - when we need to create a copy of k'th array - we just copy the k'th
- * root of the tree to the end of our current arrays. Later updating this array will
+ * root of the tree to the end of our current arrays list. Later updating this array will
  * generate new nodes [and new root] so it will not modify the actual k'th array.
  * 
  * To learn about persistent segment trees:
