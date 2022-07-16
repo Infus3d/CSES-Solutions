@@ -55,7 +55,7 @@ void upd(int x, int val){
 
 int sum(int k) {
   int s = 0;
-  while (k >= 1) {
+  while (k > 0) {
     s += fen[k];
     k -= k&-k;
   }
