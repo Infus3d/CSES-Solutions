@@ -23,9 +23,9 @@
  * 
  * -----> Now when we have all other values of the node, it becomes easy to determine the maximum subarray
  *        sum of the current range. T[v].subarrayMaximum would be the maximum among:
- * ------------> Max subarray sum in the left child T[v*2].subarrayMaximum
- * ------------> Max subarray sum in the right child T[v*2+1].subarrayMaximum
- * ------------> By concatenating the max suffix of the left child and max prefix of the right child, we can
+ *        -----> Max subarray sum in the left child T[v*2].subarrayMaximum
+ *        -----> Max subarray sum in the right child T[v*2+1].subarrayMaximum
+ *        -----> By concatenating the max suffix of the left child and max prefix of the right child, we can
  *               create a new subarray with sum T[v*2].suffix + T[v*2+1].prefix
  * 
  * The problem asks us to find the maximum subarray for the entire array, which is just T[1].subarrayMaximum.
