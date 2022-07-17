@@ -41,12 +41,12 @@
  *       a[] = [2, 10, 10, 10, 10, 10] is non-decreasing as is.
  * 
  * Now if you noticed above, at index i once you modify elements a[j] to the right of i to be at least a[i],
- * we form a 'pile' of equal elements (all equal to a[i]) until we another such greater pile. We can store
+ * we form a 'pile' of equal elements (all equal to a[i]) until we find another such greater pile. We can store
  * such piles/intervals in a stack with tuples {a[i], l, r} where a[i] will be the element/value of this interval
  * and [l, r] will be its range. Then when we 'look to the right' at each index i, we can simply look to the
  * top of the stack and pop from it as long as the interval at the top has a smaller value than a[i]. Let's take
- * one such interval {val, l, r} with val < a[i]. Note that the modification cost of making all elements in this
- * interval at least a[i] is the same for all elements of this range [l, r] - it is (a[i] - val) for each of them.
+ * one such interval {val, l, r} with val < a[i]. Note that the modification cost of making elements in this
+ * interval at least a[i] is the same for all elements of this range[l, r]: it is (a[i] - val) for each of them.
  * So we use lazy propagation to add (a[i] - val) into the range [l, r] of the segment tree. Here the segment tree
  * will be the b[] array described above.
  * 
