@@ -9,7 +9,7 @@
  * Please refer to the following tutorial for in-depth explanation of the solution (you can use google translate):
  * https://abc864197532.github.io/2021/09/15/cses-additional-sol/
  * 
- * The solution to the problem stems from noticing that there is exactly 1 outgoing edge from every node.
+ * The solution to the problem starts by noticing there is exactly 1 outgoing edge from every node.
  * This implies that there are n edges in total no matter how you partition the nodes. Note that this
  * is just 1 edge more than what's needed to form a tree out of n nodes, meaning there is exactly 1
  * cycle in every connected component of any size.
