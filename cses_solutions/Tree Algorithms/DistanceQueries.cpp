@@ -2,8 +2,10 @@
  * Problem link : https://cses.fi/problemset/task/1135
  * Prereq:
  * Lowest Common Ancestor and Binary Lifting:
- * ----> https://cses.fi/book/book.pdf  (Chapter 18)
+ * ----> https://www.youtube.com/watch?v=dOAxrhAUIhA  <-------- Hopefully you won't need to read other sources after this video
+ *       https://cses.fi/book/book.pdf  (Chapter 18)
  *       https://cp-algorithms.com/graph/lca_binary_lifting.html
+ *       https://www.topcoder.com/thrive/articles/Range%20Minimum%20Query%20and%20Lowest%20Common%20Ancestor
  * 
  * I recommend solving Company Queries II before attempting this problem as it is a direct subproblem
  * of this problem.

@@ -2,8 +2,10 @@
  * Problem link : https://cses.fi/problemset/task/1688
  * Prereq:
  * Lowest Common Ancestor and Binary Lifting:
- * ----> https://cses.fi/book/book.pdf  (Chapter 18)
+ * ----> https://www.youtube.com/watch?v=dOAxrhAUIhA  <-------- Hopefully you won't need to read other sources after this video
+ *       https://cses.fi/book/book.pdf  (Chapter 18)
  *       https://cp-algorithms.com/graph/lca_binary_lifting.html
+ *       https://www.topcoder.com/thrive/articles/Range%20Minimum%20Query%20and%20Lowest%20Common%20Ancestor
  * 
  * The problem asks us to find the lower common ancestor of two nodes u and v. There is an
  * efficient algorithm that builds the ancestry table in n*log(n) time so that the LCA of

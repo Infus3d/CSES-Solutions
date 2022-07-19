@@ -2,8 +2,10 @@
  * Problem link : https://cses.fi/problemset/task/1687
  * Prereq: 
  * Lowest Common Ancestor and Binary Lifting:
- * ----> https://cses.fi/book/book.pdf  (Chapter 18)
+ * ----> https://www.youtube.com/watch?v=dOAxrhAUIhA  <-------- Hopefully you won't need to read other sources after this video
+ *       https://cses.fi/book/book.pdf  (Chapter 18)
  *       https://cp-algorithms.com/graph/lca_binary_lifting.html
+ *       https://www.topcoder.com/thrive/articles/Range%20Minimum%20Query%20and%20Lowest%20Common%20Ancestor
  * 
  * This is a classic application of binary lifting on the given tree. Binary lifting
  * refers to the fact that when we want to find k'th ancestor of x, we advance by 2's
