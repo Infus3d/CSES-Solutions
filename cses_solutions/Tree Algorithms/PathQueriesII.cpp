@@ -13,7 +13,8 @@
  * cost another log(n) time for segment tree search. So each query in the problem is answer in log(n)^2
  * time which is still pretty fast.
  * 
- * Please refer to the tutorial above to learn about HLD.
+ * Please refer to the tutorial above to learn about HLD. The 1 sec time limit is quite strict to fit,
+ * so you might need to do some optimizations.
  * 
  * Runtime O(n*log(n) + q*log(n)^2)
  * */
@@ -79,6 +80,7 @@ void initHLD(){
   decompose(1, 1);
 }
 
+//builing the lca table to binary jump
 void build_lca(){
   for(int i=1; i<=n; i++)
     P[i][0] = parent[i];
@@ -106,13 +108,12 @@ int lca(int u, int v){
   return P[u][0];
 }
 
+//single node update
 void upd(int x, int val, int l, int r, int v){
-  //~ printf("%d %d %d %d %d\n", x, val, l, r, v);
   if(l == r){
     T[v] = val;
     return;
   }
-  
   if(x <= mid(l, r))
     upd(x, val, l, mid(l, r), v*2);
   else
@@ -121,6 +122,7 @@ void upd(int x, int val, int l, int r, int v){
   T[v] = max(T[v*2], T[v*2+1]);
 }
 
+//just range max get method
 int get(int x, int y, int l, int r, int v){
   if(r < x || y < l)
     return 0;
@@ -133,12 +135,9 @@ int get(int x, int y, int l, int r, int v){
 
 int query(int a, int b){
   int res = d[a];
-  //~ for(; head[a] != head[b]; b = parent[head[b]])
-    //~ res = max(res, get(pos[head[b]], pos[b], 1, cur_pos, 1));
-  //~ res = max(res, get(pos[a], pos[b], 1, cur_pos, 1));
   
   while(a != b){
-    if(head[b] == b){
+    if(head[b] == b){ //this if statement might seem reduntant, but using this simple optimization you can fit into time limit
       res = max(res, d[b]);
       b = parent[b];
     }
