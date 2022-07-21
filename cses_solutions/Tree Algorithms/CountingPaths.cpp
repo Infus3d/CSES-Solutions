@@ -11,13 +11,13 @@
  * We can fix the root of the tree for an arbitrary node so let's choose node 1 as the root. Let's also build
  * lca table of the tree.
  * For each of the m paths between nodes u and v we can find their lca(u, v) = w and simulate increasing the count of each node
- * on this simple path from u to v by simple increasing the count of u and v by 1 (count[u]++, count[v]++) and decrease the
+ * on this simple path from u to v by simply increasing the count of u and v by 1 (count[u]++, count[v]++) and decrease the
  * count of w by 1 (count[w]--) while also decreasing the count of parent[w] by 1 (count[parent[w]]--).
  * Now after we have done the above for every single one of m paths, we can initiate a dfs to 'sum up' these values so that
  * at the end of the dfs count[u] will contain the number of paths that cross node u. The dfs itself is fairly straightforward:
  * for every child v of node u, we just add their count[v] onto count of node u ----> count[u] += count[v].
  * So you can think of it as a from-bottom-to-up (towards the root) summation of the count values. This should also help you see
- * why we incremented node u and v values by +1: because by summing upwards late in the dfs, we add this +1 to every sinle node
+ * why we incremented node u and v values by +1: because by summing upwards late in the dfs, we add this +1 to every single node
  * on the path from u to lca(u, v) and from v to lca(u, v) at which point there is a single -1 to avoid double counting. We decreased
  * the parent[lca(u, v)] by 1 because the path from u to v does not extend anywhere beyond the lca(u, v).
  * 
