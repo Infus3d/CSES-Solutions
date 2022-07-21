@@ -9,7 +9,7 @@
  * 
  * This tells us that if we know a^(b/2) we can simply take that number and multiply with itself
  * once to get a^b (or multiply again with b when b is odd). So we just need to know a^(b/2).
- * Nnalogously if we know a^(b/4) we can apply the same principle to determine a^(b/2) and so on...
+ * Analogously if we know a^(b/4) we can apply the same principle to determine a^(b/2) and so on...
  * You can see the pattern here.
  * The base case of this recursion is when b = 0: we can just return 1 because a^0 = 1.
  * 
