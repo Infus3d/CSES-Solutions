@@ -1,7 +1,7 @@
 /*
  * Problem link : https://cses.fi/problemset/task/2166/
  * 
- * Let's build a segment tree over the input array that maintains 2 things crucial
+ * Let's build a segment tree over the input array that maintains 2 crucial
  * information in each of its intervals[l, r]:
  * -----> 1. The maximum prefix sum in this interval [l, r]
  * -----> 2. The sum of the values of this interval [l, r]
