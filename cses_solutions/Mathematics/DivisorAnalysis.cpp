@@ -13,10 +13,10 @@
  * Sum of Divisors:
  * As explained in the textbook, the sum of the divisors can be obtained using formula:
  * lowercase_sigma(n) = product of (x[i]^(k[i]+1) - 1) / (x[i] - 1) over all i where x[i] is the
- * i'th prime factor and k[i] is its power. We can easily find the value (x[i] ^ (k[i]+1)) value
+ * i'th prime factor and k[i] is its power. We can easily find the value (x[i] ^ (k[i]+1))
  * using binary exponentiation modulo 1e9+7 and we can also take (x[i] - 1) modulo 1e9+7. However
  * (a / b) % mod does not equal ((a % mod) / (b%mod)) % mod. We need to use modular inverse to
- * calculate the ratio modulo mod. To learn please refer to:
+ * calculate the ratio modulo mod. To learn the concept please refer to:
  * https://en.wikipedia.org/wiki/Modular_multiplicative_inverse
  * Using this, we can turn ratio (a/b) % mod into ((a % mod) * (b^(mod-2) % mod)) % mod.
  * In the above formula we need to multiply the numerator with (x[i]-1) ^ (1e9+5) % mod.
