@@ -19,8 +19,8 @@
  * -----> The starting number st[i] of the sequence. This one does not always change but it has the potential to change.
  *        For example, the starting number is 1 for iterations 1 and 2, and 5 for 3rd iteration and finally 13 for 4th.
  * 
- * If there was a way to maintain/keep track of these 3 values for each iteration we could easily find the k'th
- * person to be removes from the circle. On each iteration i we know the number of people to be removed: n[i-1] / 2.
+ * If there was a way to maintain these 3 values for each iteration we could easily find the k'th
+ * person to be removed from the circle. On each iteration i we know the number of people to be removed: n[i-1] / 2.
  * So if k > n[i-1]/2 we move onto the next iteration by doing k -= n[i-1]/2 because we need to find (k - n[i-1]/2)'th
  * number to removed in the next iteration (iteration i+1).
  * But if k <= n[i-1]/2 then we know that the removal of the k'th person definitely happens in this i'th iteration.
@@ -32,7 +32,7 @@
  *        whether the removal started from the first person of these n[i-1] people or the second. If it started
  *        from the first, then n[i] = n[i-1]/2. If not, then n[i] = n[i-1]/2 + 1.
  * 
- * -----> diff[i] is simple diff[i] = diff[i-1] * 2
+ * -----> diff[i] is simply diff[i] = diff[i-1] * 2
  * 
  * -----> st[i] changes from st[i-1] only when the removal of (i-1)'th iteration started from the 1st person in the sequence.
  *        And that depends on whether the removal of (i-2)'th iteration ended in n[i-2]'th person. If it did, then the next
