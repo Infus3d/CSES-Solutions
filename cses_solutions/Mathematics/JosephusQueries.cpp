@@ -39,7 +39,7 @@
  *        iteration's removal starts from the 2nd person. But if (i-2)'th iteration ended in (n[i-2]-1)'th person, then removal
  *        of (i-1)'th iteration starts from 1st person and st[i] becomes st[i-1] + diff[i-1] instead of staying as st[i-1].
  * 
- * There is also a recursive explanation in this blog but I personally could not understand it:
+ * There is also an explanation of the recursive approach in this blog but I personally could not understand it:
  * https://codeforces.com/blog/entry/82103
  * 
  * Runtime O(q*log(n))
