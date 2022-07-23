@@ -1,28 +1,41 @@
+/*
+ * Problem link : https://cses.fi/problemset/task/2185
+ * 
+ * The problem becomes easy when we consider the inclusion-exclusion principle. The following
+ * video tutorial explains the solution nicely:
+ * https://www.youtube.com/watch?v=2UEYCzKXh1s
+ * 
+ * Runtime O(2^k * k)
+ * */
 #include "bits/stdc++.h"
-
+ 
 using namespace std;
-
-long long n, k;
-vector<int> primes;
-
-long long rec(long long cur, int pos){
-  if(pos >= k) return 0;
-  long long ret = rec(cur, pos+1);
-  for(int i=0; i<64; i++){
-    if(n / primes[pos] < cur)
-      break;
-    ret += rec(cur * primes[pos], pos+1)+1;
-    cur *= primes[pos];
-  }
-  return ret;
-}
-
+ 
 int main(){
+  long long n, k;
   scanf("%lld%lld", &n, &k);
-  primes.resize(n);
+  vector<long long> primes(k);
   for(int i=0; i<k; i++)
-    scanf("%d", &primes[i]);
+    scanf("%lld", &primes[i]);
   
-  printf("%lld\n", rec(1LL, 0));
+  long long ans = 0;
+  for(int mask=1; mask<(1<<k); mask++){
+    int divCnt = __builtin_popcount(mask);
+    long long prod = 1;
+    for(int i=0; i<k; i++)
+      if((mask>>i)&1){
+        if(n / primes[i] >= prod)
+          prod *= primes[i];
+        else
+          prod = n+1;
+      }
+    
+    if(divCnt % 2 == 1)
+      ans += n / prod;
+    else
+      ans -= n / prod;
+  }
+  printf("%lld\n", ans);
+  
   return 0;
 }
