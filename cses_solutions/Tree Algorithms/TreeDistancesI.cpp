@@ -1,12 +1,12 @@
 /*
  * Problem link : https://cses.fi/problemset/task/1132
  * 
- * The farthest distance nodes to any node u in the tree will be either of the end-points
+ * The farthest distance nodes to any node u in the tree will be one of the end-points
  * of the diameter of the tree. You can learn why this is the case in the Diameter section
  * of the Chapter 14 of the book: https://cses.fi/book/book.pdf
  * 
  * We easily find the diameter and the two end-nodes of such diameter using DFS. To calculate
- * the maximum distances for either end-nodes we run a final dfs where we just maximize the
+ * the maximum distances for both end-nodes we run a final dfs where we just maximize the
  * dist[] values.
  * 
  * Runtime O(n)

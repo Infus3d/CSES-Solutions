@@ -2,7 +2,7 @@
  * Problem link : https://cses.fi/problemset/task/2417/
  * 
  * The solution below combines the logic of Sieve and Inclusion-Exclusion principle.
- * The following video tutorial explains the solution in pretty nicely:
+ * The following video tutorial explains the solution pretty nicely:
  * https://www.youtube.com/watch?v=2H65yrmM0wY
  * 
  * Runtime O(N*log(N) + n*(2^f(N))*f(N)) where:
