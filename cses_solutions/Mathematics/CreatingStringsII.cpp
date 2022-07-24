@@ -18,7 +18,7 @@
  * Then the answer would be n! / (cnt['a']! * cnt['b']! * cnt['c']! * ... * cnt['z']!) because
  * we need to avoid counting the multiple re-orderings of the same/similar characters in our initial
  * n! permutation. In any given permutation of n! possible permutations, there will be cnt['a']!
- * possible re-orderings the letters a between themselves. The same is true for letters b, c, e, ..., z.
+ * possible re-orderings of bunch of 'a' letters between themselves. The same is true for letters b, c, e, ..., z.
  * 
  * Please refer to the following video for greater detail:
  * https://www.youtube.com/watch?v=dZUrTPDu6GI
