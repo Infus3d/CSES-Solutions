@@ -8,7 +8,7 @@
  * the number of ways to get the sum by throwing a dice.
  * 
  * Just like fibonacci numbers - that have linear recurrece fib(n) = fib(n-1) + fib(n-2) -
- * we can build we can form a square matrix of the recurrence f() and take its result
+ * we can build a square matrix of the recurrence f() and take its result
  * raised to the exponent n before finally multiplying it with input matrix to get the
  * answer for f(n).
  * To understand the solution I recommend taking your time to fully understand the concept
