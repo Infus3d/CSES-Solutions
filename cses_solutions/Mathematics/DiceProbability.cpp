@@ -1,5 +1,8 @@
 /*
  * Problem link : https://cses.fi/problemset/task/1725
+ * Prereq: 
+ * ---> Basic understanding of probabilities:
+ *      https://cses.fi/book/book.pdf   (Chapter 24, first 3 sections)
  * 
  * We can solve this problem easily using dynamic programming. Let us have a dp[][]
  * array with dp[i][j] representing the probability of the sum amount j after i dice

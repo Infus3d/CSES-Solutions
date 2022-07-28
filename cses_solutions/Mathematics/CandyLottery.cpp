@@ -1,5 +1,8 @@
 /*
  * Problem link : https://cses.fi/problemset/task/1727
+ * Prereq: 
+ * ---> Basic understanding of probabilities and expected value:
+ *      https://cses.fi/book/book.pdf   (Chapter 24, first 3 sections)
  * 
  * For each i from 1 to k, we can calculate the probability of giving n children
  * candies such the maximum among them is i. We can them multiply this probability

@@ -1,5 +1,8 @@
 /*
  * Problem link : https://cses.fi/problemset/task/1728
+ * Prereq: 
+ * ---> Basic understanding of probabilities and expected value:
+ *      https://cses.fi/book/book.pdf   (Chapter 24, first 3 sections)
  * 
  * We can calculate the expected inversion contribution of each pair (i, j) with i < j
  * and add them to get the total number of expected inversions thanks to linearity.

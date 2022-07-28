@@ -1,9 +1,14 @@
 /*
  * Problem link : https://cses.fi/problemset/task/1726
+ * Prereq: 
+ * ---> Basic understanding of probabilities and expected value:
+ *      https://cses.fi/book/book.pdf   (Chapter 24, first 3 sections)
  * 
  * It is a brute-force + simple dp solution that takes advantage of linearity of
  * expected values. The below code was adapted from the blog:
  * https://codeforces.com/blog/entry/82103
+ * The following also might be helpful:
+ * https://math.stackexchange.com/questions/4269867/cses-moving-robots-how-can-we-solve-this-expected-value-problem
  * 
  * Runtime O(8^4 * k);
  * */
