@@ -1,13 +1,14 @@
 /*
- * Problem link : https://cses.fi/problemset/task/1730
+ * Problem link : https://cses.fi/problemset/task/1099
  * Prereq:
  * -----> Basic understanding of Game theory and Nim game:
  *        https://cses.fi/book/book.pdf   (Chapter 25, first 2 sections)
  * 
- * This is a literal application of Nim game where the person who starts the game
- * wins if the XOR of all piles is positive, and loses otherwise.
+ * In this problem the first player wins the game if and only if the Nim-sum (or XOR) of the
+ * numbers at the even indexed positions is positive. Otherwise, second player wins.
  * 
- * More resource: https://cp-algorithms.com/game_theory/sprague-grundy-nim.html#application-of-the-theorem
+ * The following comment explains why it works pretty elegantly:
+ * https://codeforces.com/blog/entry/82103?#comment-824949
  * 
  * Runtime O(n)
  * */
@@ -24,7 +25,8 @@ int main(){
     int exort = 0;
     for(int i=0; i<n; i++){
       int a; scanf("%d", &a);
-      exort ^= a;
+      if(i % 2 == 1)
+        exort ^= a;
     }
     printf("%s\n", exort ? "first" : "second");
   }
