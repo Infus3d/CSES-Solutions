@@ -4,12 +4,12 @@
  * ----> Solid understanding of Sprague-Grundy theorem and Nim game:
  *       https://cses.fi/book/book.pdf   (All of Chapter 25)
  * 
- * This is well-known game and the solution of it is beautifully explained in the book.
- * However the book does not explain why the Grundy Number of all sizes beyond certain
+ * This is a well-known game and the solution of it is beautifully explained in the book.
+ * However the book does not explain why the Grundy Number of all sizes beyond a certain
  * value (2000 in the code below) is always positive and I haven't found a proof for it
  * yet.
  * But there is this nicely written master's thesis explaining the sprague-grundy
- * theorem in great detail if you are beyond a simple-interest in game theory:
+ * theorem in great detail if you are beyond simply-interested in game theory:
  * https://www.universiteitleiden.nl/binaries/content/assets/science/mi/scripties/masterschlebusch.pdf
  * 
  * Runtime O(k^2 * log(k) + t) where k = 2000 in this code
