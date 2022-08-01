@@ -16,11 +16,11 @@ void towerOfHanoi(int n, int source, int intermediate, int destination){
   if(n == 0)
     return;
   
-  towerOfHanoi(n-1, source, destination, intermediate);
+  towerOfHanoi(n-1, source, destination, intermediate); //first move top n-1 disks from source to intermediate using destination
   
-  printf("%d %d\n", source, destination);
+  printf("%d %d\n", source, destination); //move the biggest disk from source to destination
   
-  towerOfHanoi(n-1, intermediate, source, destination);
+  towerOfHanoi(n-1, intermediate, source, destination); //move top n-1 disks from intermediate to destination using source
 }
 
 int main(){
