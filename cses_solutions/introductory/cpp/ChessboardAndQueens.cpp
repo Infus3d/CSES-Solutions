@@ -41,7 +41,6 @@ void rec(int row){
     ans++;
     return;
   }
-  
   for(int col=0; col<8; col++)
     if(!columns[col] && !leftDiag[row-col+7] && !rightDiag[row+col] && s[row][col] == '.'){
       columns[col] = leftDiag[row-col+7] = rightDiag[row+col] = 1; //mark this column, left and right diagonals of this cell as 'threatened'
