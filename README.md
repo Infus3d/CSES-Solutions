@@ -48,7 +48,7 @@ myqueue.push({1, 3});
 myqueue.push({(int)-1e9, 0});
 myqueue.push({6, 4});
 cout << myqueue.front().first << " " << myqueue.front().second << endl;
-mystack.pop();
+myqueue.pop();
 cout << myqueue.front().first << " " << myqueue.front().second << endl;
 ```
 This outputs
