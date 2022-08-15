@@ -12,7 +12,7 @@ Nice thing about `pair` is that when you want to sort an array of pairs, you can
 C++ vector is just like Arraylists in Java but better, because you can access the `i'th` element as you would with an array `myvector[i]`. Vectors are declared as `vector<T> myvector` where `T` is any defined type.  
 You can push an element in the vector with `myvector.push_back(element)` and pop with `myvector.pop_back()`. The size can be accessed with `myvector.size()` and the vector can be cleared with `myvector.clear()`.  
 You can initialize vectors to any size and any element with `vector<T> myvector(n, initial_element)`. For example, `vector<int> myvector(n, 0)` will initialize a vector of `n` zeros.  
-It is also possible to do 'foreach` loops on vectors:
+It is also possible to do 'foreach' loops on vectors:
 ```C++
 vector<int> myvector(n, 1);
 for(int i : myvector)
