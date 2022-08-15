@@ -41,7 +41,7 @@ This outputs
 ```
 
 ### Queue
-Queue can be declared as `queue<T> myqueue`. You can push into the queue by `myqueue.push(element)`, get the first element in the queue by `myqueueu.front()` and pop it with `myqueue.pop()`.  
+Queue can be declared as `queue<T> myqueue`. You can push into the queue by `myqueue.push(element)`, get the first element in the queue by `myqueue.front()` and pop it with `myqueue.pop()`.  
 For example:
 ```C++
 queue<pair<int, int>> myqueue;
