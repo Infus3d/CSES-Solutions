@@ -1,5 +1,6 @@
 # CSES-Solutions
 The repository contains the solutions of [cses](https://cses.fi/problemset/list/) problemset in C++. There are also Java solutions available for Introductory section.  
+Each solution file also contains the explanations, prerequisites, useful tutorials and references.
 
 ## C++ STL quick references  
   
