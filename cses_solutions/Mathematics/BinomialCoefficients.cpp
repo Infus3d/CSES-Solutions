@@ -14,7 +14,7 @@
  * to calculate the power of n!.
  * 
  * Let's say that fac[n] contains the n! % MOD, and invfac[n] contains (n!)^(-1) % MOD.
- * Then the formula above becomes (fac[a] / (invfac[a-b] * invfac[b])) % MOD.
+ * Then the formula above becomes (fac[a] * (invfac[a-b] * invfac[b])) % MOD.
  * 
  * To get a better insight into Binomial Coefficients:
  * https://www.youtube.com/watch?v=R0O3kloGb7Q
