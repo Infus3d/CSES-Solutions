@@ -90,4 +90,20 @@ This outputs
 -1000000000 0
 ```
 
-# Map
+### Map  and Unordered Map
+`map` is a 'reliable' hashmap in C++ whereas its similar container `unordered_map` is generally seen as 'unreliable'. `map` stores its data in a red-black tree where the cost of insertion/deletion is `O(logn)` guaranteeing no collisions whereas `unordred_map` is implemented as a true hashmap with average `O(1)` addition/retreival with some potential collisions. It is possible to make unordered map reliable by implementing your own hash function and passing it to the container however in most cases simply using the ordinary `map` suffices.
+Declarations are of `map<T, U> mymap` form where `T` type needs to have its comparator `<` implemented. Basic types such as `int`, `double` even `string` has their comparator ready. Analagously for unordered map `unordered_map<T, U> my_unordered_map` where type `T` needs to have its hash function implemented (\*not 100% sure).
+In both cases, you can access the elements as if it was an array like `mymap[T]` and `my_unordered_map[T]`.
+For example:
+```C++
+map<string, int> mymap;
+string s = "hello", t = "there", g = "stranger";
+mymap[s] = 322;
+mymap[t]++;
+mymap[g] -= 666;
+cout << mymap[s] << " " << mymap["there"] << " " << mymap["stranger"] << endl;
+```
+This outputs
+```
+322 1 -666
+```
