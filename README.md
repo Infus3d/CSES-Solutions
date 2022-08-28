@@ -1,5 +1,5 @@
 # CSES-Solutions
-The repository contains the solutions of [cses](https://cses.fi/problemset/list/) problemset in C++. There are also Java solutions available for Introductory section.  
+This repository contains the solutions of [cses](https://cses.fi/problemset/list/) problemset in C++. There are also Java solutions available for Introductory section.  
 Each solution file also contains the explanations, prerequisites, useful tutorials and references.
 
 ## C++ STL quick references  
@@ -8,6 +8,38 @@ Each solution file also contains the explanations, prerequisites, useful tutoria
 ### Pair
 There is an already implemented class for pairs in C++ which can be declared as `pair<T, T> mypair`. For example, you can have a pair of integers `pair<int, int> mypair`, or doubles `pair<double, double> mypair` or something mixed `pair<int, string> mypair`. The elements can then be accessed with `mypair.first` or `mypair.second`.  
 Nice thing about `pair` is that when you want to sort an array of pairs, you can simply do `sort(array, array+size)` insted of defining your own comparator for ordering. By default, `pair<T, T>` sorts by the first value, and then by the second.  
+```C++
+pair<double, int> mypair = make_pair(4.20, 69);
+cout << mypair.first << " " << mypair.second << endl;
+pair<int, int> arr[10];
+for(int i=5; i>=0; i--){
+  arr[i].first = i%2;
+  arr[i].second = i;
+  cout << arr[i].first << " " << arr[i].second << endl;
+}
+sort(arr, arr+6);
+for(int i=0; i<6; i++){
+  cout << arr[i].first << " " << arr[i].second << endl;
+}
+```
+The output is
+```
+4.2 69
+
+1 5
+0 4
+1 3
+0 2
+1 1
+0 0
+
+0 0
+0 2
+0 4
+1 1
+1 3
+1 5
+```
 
 ### Vector
 C++ vector is just like Arraylists in Java but better, because you can access the `i'th` element as you would with an array `myvector[i]`. Vectors are declared as `vector<T> myvector` where `T` is any defined type.  
