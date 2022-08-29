@@ -1,10 +1,10 @@
 /*
  * Problem link : https://cses.fi/problemset/task/1069
  * 
- * We keep a counter 'cnt' that keeps track of current size the repetition.
- * In the given string, on every index i with 0 < i < n we increase cnt by
+ * We keep a counter 'cnt' that keeps track of current size of the repetition.
+ * In the given string, on every index i for 0 < i < n we increase cnt by
  * 1 if string[i] == string[i-1] or we set it to 1 if they are not equal.
- * To get the maximum of length of such repetitions we just take maximum
+ * To get the maximum length of such repetitions we just take maximum
  * of cnt with current answer on every iteration i.
  * 
  * The code below uses cin/cout of C++ instead of scanf/printf of C because
@@ -20,6 +20,7 @@ int main(){
   //the following 2 function calls are needed to make cin/cout of C++ as fast as scanf/printf of C
   ios_base::sync_with_stdio(false);
   cin.tie(0);
+  cout.tie(0);
   
   string s;
   cin >> s; //scan in the input string
