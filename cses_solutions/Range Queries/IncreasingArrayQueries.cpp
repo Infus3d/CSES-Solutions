@@ -21,7 +21,7 @@
  *       b is now equal to [0, 0, 0, 0, 0, 2].
  *       a is now equal to [2, 10, 4, 2, 5, 5]
  * 
- * ----> i = 4 with a[i] = 2. We look to the right and try to find an element that smaller that a[i] = 2.
+ * ----> i = 4 with a[i] = 2. We look to the right and try to find an element that is smaller than a[i] = 2.
  *       There isn't any so a[] is already non-decreasing with no updates.
  * 
  * ----> i = 3 with a[i] = 4. Again we look to the right and try to find an element smaller than 4. We find
@@ -54,7 +54,7 @@
  * of this lazy-addition operations n*log(n).
  * 
  * To process the queries, we can sort them according to their left ends. For example, if we have queries count q = 4
- * with queries [{5, 5}, {2, 3}, {1, 4}, {2, 6}]  in the input, the sorted order will be
+ * with queries [{5, 5}, {2, 6}, {1, 4}, {2, 3}]  in the input, the sorted order will be
  * [{1, 4}, {2, 3}, {2, 6}, {5, 5}].
  * 
  * Then we start from the end of this sorted list and process the elements of the array a[] as described above,
@@ -63,7 +63,7 @@
  * before we process current query i. To process the query, we simply take the sum of the range [l[i], r[i]] of
  * the segment tree. 
  * 
- * After we're done with query i, we move to the next query i-1 and again process the range of the array from
+ * After we're done with query i, we move to the next query (i-1) and again process the range of the array from
  * the last processed index (in query i for example) until we hit the left end of qurrent query, which is l[i-1]
  * so that subarray a[l[i-1], n] will be non-decreasing.
  * 
