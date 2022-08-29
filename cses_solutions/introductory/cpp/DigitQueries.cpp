@@ -8,11 +8,11 @@
  * ---> 9000 4-digit numbers 1000, 1001, ..., 9998, 9999
  * ---> and so on...
  * 
- * So to get the k'th digit, we can just first subtract (from k) 9*1, then 90*2, then 900*3,
+ * So to get the k'th digit, we can first subtract (from k) 9*1, then 90*2, then 900*3,
  * until such i where k <= 9*(10^i)*i. Because if it is smaller than the latter quantity,
  * then we know for sure that k'th digit must be one of i-digit numbers.
- * Now we know the lower bound of i-digit numbers - it is simply 10^i and our k now points
- * to the digit needed digit in the sequence only among i-digit numbers. By taking ceil(k / i)
+ * Now we know the lower bound of i-digit numbers - it is simply 10^i. Our k now points
+ * to the needed digit in the sequence of only i-digit numbers. By taking ceil(k / i)
  * and adding (10^i - 1) onto it we get exactly what number the k'th digit is from in the sequence.
  * Once we know what number it belongs to, we just print the ((k-1)%i)'th digit of this number
  * as an answer.
