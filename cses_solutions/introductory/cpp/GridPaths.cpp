@@ -9,7 +9,7 @@
  * the answer by 1.
  * The above brute-force has a bit of a runtime as it is not optimized in any way.
  * One smart optimization that significantly reduces the runtime is reaching a dead-end
- * with 2 available cells to on the sides. This optimization (and many others) are
+ * with 2 available cells to move to on the sides. This optimization (and many others) are
  * visually described in the book: https://cses.fi/book/book.pdf  (Chapter 5, Pruning the Search).
  * 
  * The following tutorial adds another optimization should your program run slower:
@@ -18,7 +18,7 @@
  * https://www.youtube.com/watch?v=wWUWA70drAY
  * 
  * Runtime - unknown. We can estimate it to be around O(2^48) initially but depending on your optimization
- * and searching skills, the complexity varies.
+ * and searching skills the complexity varies.
  * */
 #include "bits/stdc++.h"
 
