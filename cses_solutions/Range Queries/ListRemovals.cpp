@@ -4,6 +4,7 @@
  * Let's take the input array a[] = {2, 6, 1, 10, 2} and imagine a concurrent array
  * b[] = {1, 1, 1, 1, 1} that is all 1 initially. b[i] = 1 indicates that a[i] is
  * still in the list, i.e. it has not been removed yet.
+ * Here a[] will be the dynamic list and b[] will be referred to as a static list.
  * 
  * Initially, when we want to find and pop the 3'rd element from the list, we just
  * get the element {1} and print it out while also making b[3] = 0. Now, again if we
