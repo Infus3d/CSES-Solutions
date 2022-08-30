@@ -5,8 +5,8 @@
  * So we subtract 3 in total from the sum of the 2 piles. This implies that the sum of the piles
  * must be divisible by 3 for answer to exist. If it is not divisible by 3 then there will be
  * either:
- * ---> a remainder 1 with final setting of the piles (0, 1) or (1, 0)
- * ---> or a remainder of 2 with final setting of the piles (0, 2) or (2, 0) or (1, 1)
+ * ---> a remainder 1 with final setting of the piles (3k+1, 0) or (0, 3k+1) for k \in Z
+ * ---> or a remainder of 2 with final setting of the piles (0, 3k+2) or (3k+2, 0) or (3k+1, 3t+1) for k, t \in Z
  * 
  * Now, that we made sure the sum is divisible by 3 let's call a = minimum of the 2 piles and
  * b = maximum of the 2 piles. For answer to exist, it is also necessary that a*2 >= b. For example
