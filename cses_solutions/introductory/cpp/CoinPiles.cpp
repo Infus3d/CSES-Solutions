@@ -13,7 +13,7 @@
  * take the input (2, 7). (2+7) is divisible by 3 but after performing 2 operations we will be left
  * with (0, 4) and this happened because 2*2 < 7.
  * You can visualize it this way: when we subtract 1 from a and 2 from b, we are essentially subtracting
- * 1 more from b than a. So on each operation we are getting b close to a. But we can do so only a limited
+ * 1 more from b than a. So on each operation we are getting b closer to a. But we can do so only a limited
  * number of times - namely a times at most. So that's why if a*2 is smaller than b there is no answer.
  * But what happens if b gets closer and closer to a and finally equals it? Then the answer definitely exists
  * because we know that (a+b) is divisible by 3 and they are equal so we can just alternate taking (-1, -2)
