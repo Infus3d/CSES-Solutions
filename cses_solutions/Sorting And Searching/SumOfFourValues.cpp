@@ -14,7 +14,7 @@
  * if the complement x - (a[u] + a[v]) is present in the hashmap. If it
  * is, print out the indices. If not, continue on.
  * 
- * Runtime O(n*log(n)) because map in c++ operates with logarithmic time.
+ * Runtime O(n^2 * log(n)) because map in c++ operates with logarithmic time.
  * */
 #include "bits/stdc++.h"
 
